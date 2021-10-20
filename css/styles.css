@@ -104,7 +104,7 @@ h3 {
 }
 
 .page-splitter p {
-  margin-left: 200px;
+  margin: -13px 0px 7px 200px;
   font-family: 'Cairo', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -127,7 +127,22 @@ h3 {
   margin-bottom: 20px;
 }
 
+.achievement-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement-div {
+  max-width: 800px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .skill-achievement {
+  margin-bottom: 40px;
   display: flex;
   transform-origin: 50% 50%;
   transition: transform 0.3s;
@@ -143,7 +158,9 @@ h3 {
 }
 
 .skill-img img {
+  width: auto;
   height: 100px;
+  object-fit: cover;
 }
 
 .skill-name-and-level {
@@ -168,7 +185,17 @@ h3 {
   border: 2px solid #a57900;
 }
 
+.skill-level-fill-green {
+  background-color: #19ff19;
+  background-image: linear-gradient(177deg, #2cff19, #ffffff, #2cff19, #119b04);
+}
+
 .skill-level-fill-yellow {
   background-color: #ffe819;
   background-image: linear-gradient(177deg, #ffe819, #ffffff, #ffe819, #9b8b04);
+}
+
+.skill-level-fill-red {
+  background-color: #ff1919;
+  background-image: linear-gradient(177deg, #ff1919, #ffffff, #ff1919, #9b0404);
 }
