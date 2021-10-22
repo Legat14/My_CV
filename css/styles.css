@@ -61,6 +61,10 @@ select {
 
 /* Настраиваем внешний вид страницы*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 .conteiner-for-all {
   width: 100%;
   display: flex;
@@ -68,10 +72,45 @@ select {
   align-items: center;
 }
 
-p, ul {
+p, ul, a {
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
   font-size: 25px;
+  color: #000000;
+}
+
+nav {
+  position: fixed;
+  top: 20%;
+  left: 10px;
+  padding: 30px;
+  background-color: #222222;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav p {
+  color: #ffffff;
+}
+
+nav a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #e4d768;f;
+}
+
+nav a:active {
+  color: #eb0000;
+}
+
+div.row a {
+  text-decoration: underline;
 }
 
 .page-splitter {
@@ -113,7 +152,6 @@ h3 {
 }
 
 .section {
-  /*background-color:rgb(105, 108, 255); /* Убрать заливку фона после настройки положения */
   max-width: 1000px;
   margin: 50px;
   display: flex;
@@ -216,7 +254,7 @@ footer {
   background-color: #222222;
 }
 
-footer p, a {
+footer p, footer a {
   color: #ffffff;
 }
 
