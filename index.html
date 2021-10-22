@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&family=IM+Fell+English+SC&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600&family=IM+Fell+English+SC&family=Source+Code+Pro:wght@300&display=swap"
     rel="stylesheet">
 </head>
 
@@ -41,6 +42,17 @@
           So feel free to send me an email with your suggestions, or just to say "Hello and nice to meet you".
         </p>
       </div>
+    </section>
+
+    <!-- Заголовок-разделитель -->
+
+    <div class="page-splitter">
+      <h2>My apps</h2>
+      <p>constantly updated</p>
+    </div>
+
+    <section class="section">
+      <p>Здесь будут приложения</p>
     </section>
 
     <!-- Заголовок-разделитель -->
@@ -338,6 +350,71 @@
         <li>Employment</li>
       </ul>
     </section>
+
+    <!-- Заголовок-разделитель -->
+
+    <div class="page-splitter">
+      <h2>Code sample</h2>
+      <p>string practice</p>
+    </div>
+
+    <section class="section">
+
+      <pre class="code-sample">
+<code>// Функция по созданию разных кнопок -
+//по одной на каждый элемент массива harpNotes
+function buttonsCreation() {
+  harpNotes.forEach((element, i) => {
+    const newButton = document.createElement('button');
+    newButton.classList.add('noteButton');
+    newButton.setAttribute('type', 'button');
+    newButton.innerHTML = harpNotes[i].slice(0, harpNotes[i].length - 1);
+    newButton.style.top = `${keyTopOffset[i]}px`;
+    newButton.style.left = `${keyLeftOffset[i]}px`;
+    const formSelection = document.body.children[1].children[0];
+    formSelection.append(newButton);
+  });
+          
+  // Выбираем все нотные кнопки
+  buttonSelection = document.querySelectorAll('.noteButton');
+
+  // Слушаем клики мыши по кнопкам и уход мыши с кнопки
+    buttonSelection.forEach((element, i) => {
+      buttonSelection[i].addEventListener('mousedown', buttonClick);
+      buttonSelection[i].addEventListener('mouseout', buttonUnclick);
+      buttonSelection[i].addEventListener('mouseup', buttonUnclick);
+    });</code></pre>
+
+    </section>
+
+    <footer>
+      <div class = "space">
+
+        <div class = "column">
+          <div class = "row">
+            <p class = "red-text">E-mail:</p>
+            <p>zia-d@mail.ru</p>
+          </div>
+          <div class = "row">
+            <p class = "red-text">Discord:</p>
+            <p>Legat_14#4474</p>
+          </div>
+        </div>
+
+        <div class = "column">
+          <div class = "row">
+            <p class = "red-text">GitHub:</p>
+            <p><a href="https://github.com/Legat14">https://github.com/Legat14</a></p>
+          </div>
+          <div class = "row">
+            <p class = "red-text">Date of development:</p>
+            <p>October 2021</p>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
 
   </div>
 </body>

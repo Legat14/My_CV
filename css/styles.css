@@ -37,6 +37,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden; /*Прячем прокрутку по горизонтали, чтобы нельзя было увидеть края красных линий, где сужается тень*/
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -198,4 +199,58 @@ h3 {
 .skill-level-fill-red {
   background-color: #ff1919;
   background-image: linear-gradient(177deg, #ff1919, #ffffff, #ff1919, #9b0404);
+}
+
+.code-sample {
+  padding: 30px;
+  margin: 0px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  background-color: #eee9bd;
+}
+
+footer {
+  width: 105%;
+  display: flex;
+  justify-content: center;
+  background-color: #222222;
+}
+
+footer p, a {
+  color: #ffffff;
+}
+
+footer a:visited {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #e4d768;
+}
+
+footer a:active {
+  color: #eb0000;
+}
+
+.space {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.red-text {
+  margin-right: 10px;
+  color: #eb0000;
 }
