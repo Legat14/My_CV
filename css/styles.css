@@ -37,7 +37,8 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  overflow-x: hidden; /*Прячем прокрутку по горизонтали, чтобы нельзя было увидеть края красных линий, где сужается тень*/
+  overflow-x: hidden;
+  /*Прячем прокрутку по горизонтали, чтобы нельзя было увидеть края красных линий, где сужается тень*/
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -49,6 +50,7 @@ ol[class] {
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -72,7 +74,9 @@ html {
   align-items: center;
 }
 
-p, ul, a {
+p,
+ul,
+a {
   font-family: 'Cairo', sans-serif;
   font-weight: 300;
   font-size: 25px;
@@ -84,7 +88,7 @@ nav {
   top: 20%;
   left: 10px;
   padding: 30px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav a {
@@ -123,7 +127,8 @@ div.row a {
   box-shadow: 0px 8px 10px #001841;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'IM Fell English SC', serif;
   color: #ffffff;
 }
@@ -178,14 +183,26 @@ h4 {
 /* My apps */
 
 .apps-section {
-  height: 800px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .card {
   --border-thickness: 8px;
   width: calc(700px + var(--border-thickness) * 2);
-  height: calc(500px + var(--border-thickness) * 2 + 79px);
+  height: calc(var(--border-thickness) * 2 + 79px + 20px);
+  /* 79px - высота шапки, второе число - сколько картинка будет выглядывать из-за следующей карточки */
+  display: flex;
+  flex-direction: column;
   border: var(--border-thickness) solid #eb0000;
+  transition: height 0.2s;
+}
+
+.card:hover {
+  height: calc(500px + var(--border-thickness) * 2 + 79px);
+  transition: height 0.2s;
 }
 
 .card-header {
@@ -205,6 +222,14 @@ h4 {
   font-weight: 600;
   font-size: 20px;
   font-style: oblique;
+}
+
+.card-img {
+  width: 700px;
+  height: 500px;
+  background-image: url(../img/on-line_harmonica.jpg);
+  background-color: #ffffff;
+ 
 }
 
 /* Skills and languages */
@@ -297,7 +322,8 @@ footer {
   background-color: #222222;
 }
 
-footer p, footer a {
+footer p,
+footer a {
   color: #ffffff;
 }
 
