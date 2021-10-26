@@ -361,3 +361,21 @@ footer a:active {
   margin-right: 10px;
   color: #eb0000;
 }
+
+/* Adaptation */
+
+@media (max-width: 1810px) {
+
+.section {
+  margin-right: -200px;
+}
+
+}
+
+@media (max-width: 1560px) {
+
+  .section {
+    margin-right: -400px;
+  }
+  
+  }
