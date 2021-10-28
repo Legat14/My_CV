@@ -165,7 +165,7 @@ h4 {
 
 .section {
   max-width: 1000px;
-  margin: 50px;
+  margin: 50px calc(calc(100vw - 1400px) / 2) 50px 400px;
   display: flex;
   justify-content: space-between;
 }
@@ -307,6 +307,11 @@ h4 {
   background-image: linear-gradient(177deg, #ff1919, #ffffff, #ff1919, #9b0404);
 }
 
+.centering {
+  display: flex;
+  justify-content: center;
+}
+
 .code-sample {
   padding: 30px;
   margin: 0px;
@@ -364,18 +369,19 @@ footer a:active {
 
 /* Adaptation */
 
-@media (max-width: 1810px) {
+@media (max-width: 1430px) {
 
 .section {
-  margin-right: -200px;
+  width: calc(100vw - 410px);
+  margin-right: 0px;
 }
 
 }
 
-@media (max-width: 1560px) {
+/*@media (max-width: 1560px) {
 
   .section {
     margin-right: -400px;
   }
   
-  }
+  }*/
