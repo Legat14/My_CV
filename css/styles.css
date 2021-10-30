@@ -165,7 +165,7 @@ h4 {
 
 .section {
   max-width: 1000px;
-  margin: 50px calc(calc(100vw - 1400px) / 2) 50px 400px;
+  margin: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -183,9 +183,11 @@ h4 {
 /* My apps */
 
 .apps-section {
+  width: 1000px;
   height: 700px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: end;
 }
 
@@ -234,7 +236,6 @@ h4 {
 /* Skills and languages */
 
 .achievement-section {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -312,6 +313,14 @@ h4 {
   justify-content: center;
 }
 
+ul {
+  margin: 0px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .code-sample {
   padding: 30px;
   margin: 0px;
@@ -369,19 +378,28 @@ footer a:active {
 
 /* Adaptation */
 
-@media (max-width: 1430px) {
-
-.section {
-  width: calc(100vw - 410px);
-  margin-right: 0px;
-}
-
-}
-
-/*@media (max-width: 1560px) {
+  @media (max-width: 1835px) {
 
   .section {
-    margin-right: -400px;
+    margin-left: 410px;
   }
-  
-  }*/
+
+  .conteiner-for-all {
+    align-items: flex-start;
+  }
+
+}
+
+@media (max-width: 1550px) {
+
+.apps-section {
+  width: 720px;
+}
+
+@media (max-width: 1090px) {
+
+  .achievement-div {
+    justify-content: center;
+  }
+
+}
