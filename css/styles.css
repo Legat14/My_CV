@@ -318,7 +318,6 @@ ul {
   width: 1000px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .code-sample {
@@ -394,6 +393,8 @@ footer a:active {
 
 .apps-section {
   width: 720px;
+}
+
 }
 
 @media (max-width: 1090px) {
