@@ -163,8 +163,22 @@ h4 {
   font-style: oblique;
 }
 
-.section {
+.section-1000px {
   max-width: 1000px;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-800px {
+  max-width: 800px;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-716px {
+  max-width: 716px;
   margin: 50px;
   display: flex;
   justify-content: space-between;
@@ -379,28 +393,24 @@ footer a:active {
 
   @media (max-width: 1835px) {
 
-  .section {
+  .section-1000px {
     margin-left: 410px;
+    align-self: flex-start;
   }
+}
 
-  .conteiner-for-all {
-    align-items: flex-start;
+@media (max-width: 1634px) {
+
+  .section-800px {
+    margin-left: 410px;
+    align-self: flex-start;
   }
-
 }
 
 @media (max-width: 1550px) {
 
-.apps-section {
-  width: 720px;
-}
-
-}
-
-@media (max-width: 1090px) {
-
-  .achievement-div {
-    justify-content: center;
+  .section-716px {
+    margin-left: 410px;
+    align-self: flex-start;
   }
-
 }
