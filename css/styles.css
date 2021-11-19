@@ -184,6 +184,13 @@ h4 {
   justify-content: space-between;
 }
 
+.section-1000pxUl {
+  max-width: 1000px;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* About me*/
 
 .about-me-text {
@@ -324,12 +331,11 @@ h4 {
 
 .centering {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 ul {
   margin: 0px;
-  width: 1000px;
   display: flex;
   flex-direction: column;
 }
@@ -410,6 +416,14 @@ footer a:active {
 @media (max-width: 1550px) {
 
   .section-716px {
+    margin-left: 410px;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 1165px) {
+
+  .section-1000pxUl {
     margin-left: 410px;
     align-self: flex-start;
   }
