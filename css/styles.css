@@ -397,7 +397,7 @@ footer a:active {
 
 /* Adaptation */
 
-  @media (max-width: 1835px) {
+@media (max-width: 1835px) {
 
   .section-1000px {
     margin-left: 410px;
@@ -426,5 +426,74 @@ footer a:active {
   .section-1000pxUl {
     margin-left: 410px;
     align-self: flex-start;
+  }
+}
+
+@media (max-width: 1170px) {
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+
+  .about-me img {
+    align-self: center;
+  }
+
+  .about-me h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  .apps-section {
+    align-items: flex-start;
+  }
+
+  .card {
+    width: calc(500px + var(--border-thickness) * 2);
+    height: calc(var(--border-thickness) * 2 + 79px + 10px);
+    /* 79px - высота шапки, второе число - сколько картинка будет выглядывать из-за следующей карточки */
+  }
+  .card:hover {
+    height: calc(357px + var(--border-thickness) * 2 + 79px);
+  }
+  .card-img {
+    width: 500px;
+    height: 357px;
+  }
+  .card-img img {
+    width: 500px;
+    height: 357px;
+  }
+}
+
+@media (max-width: 900px) {
+  .apps-section {
+    align-items: flex-start;
+  }
+
+  .card {
+    width: calc(350px + var(--border-thickness) * 2);
+    height: calc(var(--border-thickness) * 2 + 79px + 10px);
+    /* 79px - высота шапки, второе число - сколько картинка будет выглядывать из-за следующей карточки */
+  }
+  .card:hover {
+    height: calc(250px + var(--border-thickness) * 2 + 79px);
+  }
+  .card-img {
+    width: 350px;
+    height: 250px;
+  }
+  .card-img img {
+    width: 350px;
+    height: 250px;
+  }
+  .app-tools {
+    margin: 0px 0px 7px 0px;
   }
 }
